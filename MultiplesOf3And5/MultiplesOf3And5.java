@@ -13,9 +13,9 @@ public class MultiplesOf3And5 {
 		+ String.valueOf(sum));
 	}
 
-	private class MultiplesOf3And5Logic ={
+	private class MultiplesOf3And5Logic {
 		
-		public MultiplesOf3And5(){ }
+		public MultiplesOf3And5Logic(){ }
 
 		public int sumBelow(int n){
 			int sum = 0;
