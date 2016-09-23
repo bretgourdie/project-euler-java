@@ -1,3 +1,5 @@
+package ProjectEuler.MultiplesOf3And5;
+
 public class MultiplesOf3And5 {
 	
 	public MultiplesOf3And5(){ }

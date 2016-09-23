@@ -1,3 +1,5 @@
+package ProjectEuler.MultiplesOf3And5;
+
 public class MultiplesOf3And5Tester {
 	public static void main(String[] args){
 		
