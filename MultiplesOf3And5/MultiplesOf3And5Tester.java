@@ -1,7 +1,7 @@
 public class MultiplesOf3And5Tester {
 	public static void main(String[] args){
 		
-		int[] testNumbers = new int[]{10, 200, 500};
+		int[] testNumbers = new int[]{10, 1000};
 		
 		MultiplesOf3And5 m = new MultiplesOf3And5();
 		
