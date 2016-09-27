@@ -10,7 +10,11 @@ public class LargestPrimeFactor {
 	public int[] findPrimeFactors(int n){
 		List<Integer> primeFactors = new ArrayList<Integer>();
 
-		/* do work */
+		for(int ii = 2; ii < n; ii++){
+			if(n % ii == 0){
+				primeFactors.add(ii);
+			}
+		}
 
 		int[] aPrimeFactors = listToArray(primeFactors);
 		return aPrimeFactors;
