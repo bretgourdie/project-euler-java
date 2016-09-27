@@ -10,9 +10,10 @@ public class LargestPrimeFactor {
 	public long[] findPrimeFactors(long n){
 		List<Long> primeFactors = new ArrayList<Long>();
 
-		for(long ii = 2; ii < n; ii++){
-			if(n % ii == 0 && findPrimeFactors(ii).length == 0){
+		for(long ii = 2; ii <= n; ii++){
+			while(n % ii == 0){
 				primeFactors.add(ii);
+				n = n / ii;
 			}
 		}
 
