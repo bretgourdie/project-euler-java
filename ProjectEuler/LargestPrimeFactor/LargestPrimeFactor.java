@@ -1,11 +1,14 @@
 package ProjectEuler.LargestPrimeFactor;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class LargestPrimeFactor {
 	
 	public LargestPrimeFactor() { }
 
 	public int[] findPrimeFactors(int n){
-		List<int> primeFactors = new List<int>();
+		List<Integer> primeFactors = new ArrayList<Integer>();
 
 		/* do work */
 
@@ -13,7 +16,7 @@ public class LargestPrimeFactor {
 		return aPrimeFactors;
 	}
 
-	private int[] listToArray(List<int> list){
+	private int[] listToArray(List<Integer> list){
 		int[] array = new int[list.size()];
 
 		for(int ii = 0; ii < list.size(); ii++){
