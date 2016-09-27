@@ -6,22 +6,15 @@ public class EvenFibonacciNumbers {
 
 	public int findSumOfEvenValuesWithLimit(int limit){
 		int prevTerm = 1;
-		int curTerm = 2;
-		int sum = curTerm;
+		int curTerm = 1;
+		int sum = prevTerm;
 
-		while(curTerm <= limit){
+		while(curTerm < limit){
 			int newTerm = curTerm + prevTerm;
 			prevTerm = curTerm;
 			curTerm = newTerm;
 
 			sum += curTerm;
-
-			System.out.println("curTerm = "
-			 + String.valueOf(curTerm)
-			 + "; prevTerm = "
-			 + String.valueOf(prevTerm)
-			 + "; sum = "
-			 + String.valueOf(sum));
 		}
 		
 		return sum;
