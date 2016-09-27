@@ -7,21 +7,21 @@ public class LargestPrimeFactor {
 	
 	public LargestPrimeFactor() { }
 
-	public int[] findPrimeFactors(int n){
-		List<Integer> primeFactors = new ArrayList<Integer>();
+	public long[] findPrimeFactors(long n){
+		List<Long> primeFactors = new ArrayList<Long>();
 
-		for(int ii = 2; ii < n; ii++){
+		for(long ii = 2; ii < n; ii++){
 			if(n % ii == 0 && findPrimeFactors(ii).length == 0){
 				primeFactors.add(ii);
 			}
 		}
 
-		int[] aPrimeFactors = listToArray(primeFactors);
+		long[] aPrimeFactors = listToArray(primeFactors);
 		return aPrimeFactors;
 	}
 
-	private int[] listToArray(List<Integer> list){
-		int[] array = new int[list.size()];
+	private long[] listToArray(List<Long> list){
+		long[] array = new long[list.size()];
 
 		for(int ii = 0; ii < list.size(); ii++){
 			array[ii] = list.get(ii);
@@ -30,12 +30,12 @@ public class LargestPrimeFactor {
 		return array;
 	}
 
-	public int findLargestPrimeFactor(int n){
-		int[] primeFactors = findPrimeFactors(n);
+	public long findLargestPrimeFactor(long n){
+		long[] primeFactors = findPrimeFactors(n);
 
-		int largestPrimeFactor = Integer.MIN_VALUE;
+		long largestPrimeFactor = Long.MIN_VALUE;
 
-		for(int i : primeFactors){
+		for(long i : primeFactors){
 			largestPrimeFactor = Math.max(largestPrimeFactor, i);
 		}
 
