@@ -11,7 +11,7 @@ public class LargestPrimeFactor {
 		List<Integer> primeFactors = new ArrayList<Integer>();
 
 		for(int ii = 2; ii < n; ii++){
-			if(n % ii == 0){
+			if(n % ii == 0 && findPrimeFactors(ii).length == 0){
 				primeFactors.add(ii);
 			}
 		}
