@@ -3,7 +3,7 @@ package ProjectEuler.EvenFibonacciNumbers;
 public class EvenFibonacciNumbersTester{
 	
 	public static void main(String[] args){
-		int[] testLimits = new int[]{10, 13, 89};
+		int[] testLimits = new int[]{10, 13, 89, 4000000};
 		EvenFibonacciNumbers e = new EvenFibonacciNumbers();
 
 		for(int n : testLimits){
