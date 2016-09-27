@@ -17,7 +17,7 @@ public class Tester {
 			}
 
 			for(int i : primes){
-				System.out.println("\ti");
+				System.out.println("\t" + String.valueOf(i));
 			}
 		}
 	}
