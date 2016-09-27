@@ -1,6 +1,6 @@
 package ProjectEuler.EvenFibonacciNumbers;
 
-public class EvenFibonacciNumbersTester{
+public class Tester {
 	
 	public static void main(String[] args){
 		int[] testLimits = new int[]{10, 13, 89, 4000000};
