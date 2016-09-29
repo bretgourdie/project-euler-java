@@ -3,7 +3,7 @@ package ProjectEuler.LargestPalindromeProduct;
 public class Tester {
 	
 	public static void main(String[] args){
-		int[] numDigits = new int[] {2};
+		int[] numDigits = new int[] {2, 3};
 		LargestPalindromeProduct p = new LargestPalindromeProduct();
 
 		for(int n : numDigits){
