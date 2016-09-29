@@ -7,13 +7,20 @@ public class LargestPalindromeProduct {
 	public int findByDigits(int numDigits){
 		
 		String startingNumber = new String(new char[numDigits]).replace("\0", "9");
-		int firstFactor = Integer.parseInt(startingNumber);
-		int secondFactor = firstFactor;
+		int factor = Integer.parseInt(startingNumber);
+		int largest = Integer.MIN_VALUE;
 
-		for(int ii = firstFactor; ii > 0; ii--){
-			for(int jj = secondFactor; jj > 0; jj--){
+		for(int ii = factor; ii > 0; ii--){
+			for(int jj = factor; jj > 0; jj--){
 				
-				int product = firstFactor * secondFactor;
+				int product = ii * jj;
+
+				System.out.println(
+					String.valueOf(ii)
+					+ " * "
+					+ String.valueOf(jj)
+					+ " = "
+					+ String.valueOf(product));
 
 				String sProduct = String.valueOf(product);
 
@@ -23,11 +30,11 @@ public class LargestPalindromeProduct {
 				}
 
 				if(isPalindrome){
-					return product;
+					largest = Math.max(largest, product);
 				}
 			}
 		}
 
-		return -1;
+		return largest;
 	}
 }
