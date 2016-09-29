@@ -1,4 +1,4 @@
-package ProjectEuler.10001stPrime;
+package ProjectEuler.Prime10001;
 
 public class Tester {
 	
