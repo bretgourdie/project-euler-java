@@ -13,7 +13,7 @@ public class Prime10001{
 		//calculate
 		for(int ii = 2; ii <= n; ii++){
 			
-			if(primeList[ii-1] != null){
+			if(primeList[ii-1] == null){
 				primeList[ii-1] = true;
 			}
 
