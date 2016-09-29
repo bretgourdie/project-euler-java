@@ -12,7 +12,7 @@ public class Tester {
 			System.out.println("Largest Palindrome using "
 			+ String.valueOf(n)
 			+ " digits is: "
-			+ String.valueOf(result);
+			+ String.valueOf(result));
 		}
 	}
 }
