@@ -15,13 +15,6 @@ public class LargestPalindromeProduct {
 				
 				int product = ii * jj;
 
-				System.out.println(
-					String.valueOf(ii)
-					+ " * "
-					+ String.valueOf(jj)
-					+ " = "
-					+ String.valueOf(product));
-
 				String sProduct = String.valueOf(product);
 
 				boolean isPalindrome = true;
