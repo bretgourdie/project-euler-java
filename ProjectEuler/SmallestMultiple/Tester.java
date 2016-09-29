@@ -2,7 +2,7 @@ package ProjectEuler.SmallestMultiple;
 
 public class Tester {
 	public static void main(String[] args){
-		int[] testNums = new int[] {10};
+		int[] testNums = new int[] {10, 20};
 		SmallestMultiple s = new SmallestMultiple();
 
 		for(int n : testNums){
