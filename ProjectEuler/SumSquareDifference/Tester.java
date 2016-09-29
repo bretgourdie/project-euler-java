@@ -3,7 +3,7 @@ package ProjectEuler.SumSquareDifference;
 public class Tester {
 	
 	public static void main(String[] args){
-		int[] testNums = new int[] {10};
+		int[] testNums = new int[] {10, 100};
 		SumSquareDifference s = new SumSquareDifference();
 
 		for(int n : testNums){
