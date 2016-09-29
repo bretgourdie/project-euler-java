@@ -4,7 +4,7 @@ public class LargestPalindromeProduct {
 
 	public LargestPalindromeProduct() { }
 
-	public findByDigits(int numDigits){
+	public int findByDigits(int numDigits){
 		
 		String startingNumber = new String(new char[numDigits]).replace("\0", "9");
 		int firstFactor = Integer.parseInt(startingNumber);
@@ -18,8 +18,8 @@ public class LargestPalindromeProduct {
 				String sProduct = String.valueOf(product);
 
 				boolean isPalindrome = true;
-				for(int ii = 0; ii < sProduct.length / 2; ii++){
-					isPalindrome &= sProduct.charAt(ii) == sProduct.charAt(sProduct.length - ii - 1);
+				for(int kk = 0; kk < sProduct.length() / 2; kk++){
+					isPalindrome &= sProduct.charAt(kk) == sProduct.charAt(sProduct.length() - kk - 1);
 				}
 
 				if(isPalindrome){
@@ -27,5 +27,7 @@ public class LargestPalindromeProduct {
 				}
 			}
 		}
+
+		return -1;
 	}
 }
