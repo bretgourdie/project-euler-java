@@ -3,7 +3,7 @@ package ProjectEuler.SpecialPythagoreanTriplet;
 public class Tester {
 	
 	public static void main(String[] args){
-		int testNums = new int[] {12};
+		int[] testNums = new int[] {12};
 		SpecialPythagoreanTriplet s = new SpecialPythagoreanTriplet();
 
 		for(int n : testNums){
