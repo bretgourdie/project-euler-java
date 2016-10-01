@@ -9,7 +9,7 @@ public class PrimeGenerator {
 		Boolean primeList[] = new Boolean[n];
 
 		if(primeList.length > 0){
-			primeList[0] == false;
+			primeList[0] = false;
 		}
 
 		// calculate
@@ -31,7 +31,7 @@ public class PrimeGenerator {
 			}
 		}
 
-		int[] primeArray = iPrimeList.toArray(new int[iPrimeList.size()]);
+		int[] primeArray = iPrimeList.stream().mapToInt(i -> i).toArray();
 		return primeArray;
 	}
 }
