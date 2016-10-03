@@ -1,5 +1,2 @@
-cd ProjectEuler
-del *.class 2>NUL
-"javac.exe" -classpath "." *.java
-for /D %%i in (*) do cd "%%i" && del *.class 2>NUL && "javac.exe" -classpath "." *.java & cd ..
-cd ..
+                         del ProjectEuler\*.class 2>NUL && "javac.exe" -classpath "." ProjectEuler\*.java
+for /D %%i in (ProjectEuler\*) do del %%i\*.class 2>NUL && "javac.exe" -classpath "." %%i\*.java
